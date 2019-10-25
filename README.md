@@ -155,3 +155,22 @@ npm run build
 TeX2Max is Licensed under the [GNU General Public, License Version 3](https://github.com/KQMATH/tex2max/blob/master/LICENSE).
 
 [⬆ back to top](#tex2max)
+
+
+# borwserify
+
+```shell script
+npm install
+```
+
+```shell script
+ npm install --save-dev babelify @babel/core @babel/preset-env
+```
+
+```shell script
+npm install -D browserify
+```
+
+```shell script
+browserify build/merge.js --standalone mymodule -o dist/tex2max.js -t [ babelify --presets [ @babel/preset-env ] ]
+```
